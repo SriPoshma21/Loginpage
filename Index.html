@@ -3,92 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Local and Session Storage</title>
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-        }
-        
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background: linear-gradient(to right, #83a4d4, #b6fbff);
-            color: #333;
-        }
-        
-        #parent {
-            background: #ffffff;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 300px;
-            text-align: center;
-        }
-        
-        #parent input {
-            width: 100%;
-            padding: 0.8rem;
-            margin: 0.5rem 0;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            font-size: 1rem;
-        }
-
-        #parent input:focus {
-            outline: none;
-            border-color: #83a4d4;
-            box-shadow: 0 0 5px rgba(131, 164, 212, 0.5);
-        }
-        
-        #btn {
-            background-color: #83a4d4;
-            color: #fff;
-            padding: 0.8rem;
-            width: 100%;
-            border: none;
-            border-radius: 4px;
-            font-size: 1rem;
-            cursor: pointer;
-            margin-top: 1rem;
-            transition: background-color 0.3s ease;
-        }
-        
-        #btn:hover {
-            background-color: #3a75c4;
-        }
-        
-        #parent input[type="password"]::placeholder {
-            font-style: italic;
-        }
-    </style>
+    <title>Document</title>
 </head>
 <body>
-    <div id="parent">
-        <input type="text" id="inp1" placeholder="Enter Your Name"><br>
-        <input type="text" id="inp2" placeholder="Enter Your Email"><br>
-        <input type="password" id="inp3" placeholder="Enter Password"><br>
-        <button id="btn" onclick="fun()">Login</button>
-    </div>
-
-    <script>
-        let inp1 = document.getElementById("inp1");
-        let inp2 = document.getElementById("inp2");
-        let inp3 = document.getElementById("inp3");
-        let details=[]
-        function fun() {
-            localStorage.setItem("username", inp1.value);
-            localStorage.setItem("mailid", inp2.value);
-            localStorage.setItem("password", inp3.value); 
-            window.open("pagedetails.html" );
-            inp1.value = "";
-            inp2.value = "";
-            inp3.value = "";
-        }
-    </script>
+    <a href="loginpage.html">Login page</a><br>
+    <a href="pagedetails.html">Entered details</a>
 </body>
 </html>
